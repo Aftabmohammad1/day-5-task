@@ -1,0 +1,89 @@
+var json = [{
+    "id" : "aftab1", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "afta19121@gmail.com"
+},
+{
+    "id" : "aftab2", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "aftab19121@gmail.com"
+}];
+//for loop
+for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj.id);
+    console.log(obj.msg);
+    console.log(obj.task);
+    console.log(obj.mail);
+
+}
+//for Each
+json.forEach(function(obj) { console.log(obj.msg); });
+
+//for In
+for (var key in json) {
+if (json.hasOwnProperty(key)) {
+  console.log(json[key].id);
+  //console.log(json[key].msg);
+ 
+}
+}
+//for Of
+let text = "";
+for (let x of json[key].id) {
+ text += x; 
+}
+ console.log(text);
+
+
+ // creation of resume
+ let myResume={
+    "basics": {
+      "name": "MOHAMMAD AFTAB AHMED",
+      "email": "aftab19121@gmail.com",
+      "phone": 6304058809,
+      "degree": "B.TECH",
+      "location": {
+        "address": "alankar theatre hanmakonda",
+        "postalCode": 506001,
+        "city": "Warangal",
+        "state": "Telangana",
+        "country": "India"
+      },
+      
+    },
+    "education": [
+      {
+        "institution": "Balaji Institute Of Technolgy And Science",
+        "department": "ECE",
+        "studyType": "fulltime",
+        "batch start year": 2018,
+        "batch end year": 2022,
+        "gpa": 7.0,
+      }
+    ],
+    "skills": [
+      {
+        "name": "C++,javascript",
+        "level": "beginner",
+        "project": [
+          "Bus attendance system using RFID"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "hindi,Enlish,telugu"
+      }
+    ],
+    "interests": [
+      {
+        "name": "singing,playing cricket,",
+      }
+    ]
+  }
+  console.log(myResume);
+  
